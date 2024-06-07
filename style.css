@@ -1,0 +1,597 @@
+:root{
+    --font-size-text: 18px;
+    --font-size-small-text: 16px;
+    --font-size-heading2: 20px;
+    --purple-color: #5040A1;
+    --text-margin: 33px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    /* overflow-x:  hidden; */
+}
+body{
+    overflow-x:  hidden;
+}
+.main{
+    background-color: #FDFDFD;
+    display: flex;
+    padding-left: 40px;
+    overflow-x:  hidden;
+    gap: 35px;
+    padding-top: 50px;
+}
+header.header{
+    max-width: 100%;
+    height: 500px;
+    background-image: url('./assets/bg_image.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    /* background-position: center; */
+    overflow: hidden;
+    padding: 20px;
+}
+header.header div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+header.header div:first-child img{
+    height: 30px;
+}
+h2{
+    color: var(--purple-color);
+    font-size: var(--font-size-heading2);
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.main .content .heading{
+    display: inline;
+    font-size: 30px;
+    font-weight: 700;
+}
+.content .ended{
+    background-color:#FE6060;
+    border-radius: 7px;
+    padding: 3px 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+.main .content .desc{
+    font-size: 22px;
+    font-weight: 300;
+    margin: var(--text-margin) 0;
+}
+.profile-info{
+    display: flex;
+    align-items: center;
+    margin: 21px 0;
+    gap: 25px;
+}
+.profile-info img{
+    width: 46px;
+    height: 46px;
+}
+.profile-info h2{
+    color: var(--purple-color);
+    font-size: var(--font-size-text);
+}
+.profile-info span{
+    color: #C1C1C1;
+    font-size: var(--font-size-small-text);
+    font-weight: 600;
+}
+.grid-events{
+    width: 800px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 120px;
+}
+.grid-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.grid-list p{
+    font-size: var(--font-size-small-text);
+    font-weight: 500;
+}
+.about-workshop p{
+    font-weight: 300;
+    width: 711px;
+    font-size: var(--font-size-text);
+    margin-bottom: 28px;
+}
+.readmore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.readmore span{
+    font-size: var(--font-size-small-text);
+    font-weight: 600;
+    color: var(--purple-color);
+}
+.faq p{
+    font-size: var(--font-size-text);
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+div.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+div.questions div{
+    height: 60px;
+    width: 716px;
+    background-color: white;
+    box-shadow: 0px 10px 25px -6px #0000001A;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+}
+div.questions div p{
+    font-weight: 500;
+    padding-top: 30px;
+}
+h2.post-question-heading{
+    font-weight: 400;
+}
+h2.post-question-heading span{
+    font-weight: 600;
+}
+.post-question .post-question-para{
+    font-weight: 400;
+    font-size: var(--font-size-text);
+    margin-bottom: var(--text-margin);
+}
+.post-question form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.post-question form input{
+    max-width: 700px;
+    padding: 15px 0 92px 10px;
+    border-radius: 4px;
+    border: 1px solid #9B9B9B;
+    font-style: italic;
+    font-size: var(--font-size-small-text);
+    font-weight: 400;
+    background-color: #FDFDFD;
+
+}
+.post-question form button{
+    height: 49px;
+    width: 108px;
+    background-color: var(--purple-color);
+    border-radius: 7px;
+    color: white;
+    font-weight: 400;
+    font-size: var(--font-size-small-text);
+    border: none;
+}
+section.profile-card{
+    height: 256px;
+    min-width: 426px;
+    background-color: #fff;
+    box-shadow: 0px 0px 153px 0px #0000001A;
+    margin-top: 98px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card .card{
+    height: 209px;
+    width: 363px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.profile-card .card .picXname{
+    display: flex;
+    gap: 40px;
+    width: 363px;
+    align-items: center;
+}
+.profile-card .card .picXname .name{
+    display: flex;
+    margin: 0;
+    /* gap: 7px; */
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.picXname .name h2{
+    font-weight: 700;
+    font-size: var(--font-size-text);
+    color: black;
+    margin: 0 0;
+}
+.picXname name p{
+    font-weight: 300;
+    font-size: 14px;
+}
+.picXname img.follow{
+    width: 50px;
+    height: 50px;
+}
+.picXname p.about{
+    font-size: var(--font-size-small-text);
+    font-weight: 300;
+}
+footer{
+    background-color: white;
+    padding: 15px 50px;
+    height: 112px;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -18px 104px -20px #5040A14D;
+}
+.time-grid{
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
+    height: 40px;
+    gap: 10px; 
+    margin-bottom: 50px;
+}
+.time-grid .attribute{
+    font-size: var(--font-size-text);
+    font-weight: 600;
+    color: var(--purple-color);
+}
+.time-grid .value{
+    font-weight: var(--font-size-heading2);
+    font-weight: 700;
+}
+footer .time-grid{
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
+    height: 40px;
+    gap: 10px;
+}
+footer .time-grid .attribute{
+    font-size: var(--font-size-text);
+    font-weight: 600;
+    color: var(--purple-color);
+}
+footer .time-grid .value{
+    font-weight: var(--font-size-heading2);
+    font-weight: 700;
+}
+footer .register{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.register .price{
+    display: flex;
+    flex-direction: column;
+}
+.register .price span{
+    font-weight: 300;
+    font-size: var(--font-size-small-text);
+}
+.register .price p{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--purple-color);
+}
+.register button{
+    height: 69px;
+    width: 220px;
+    border: none;
+    border-radius: 13px;
+    background-color: var(--purple-color);
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+.about-host{
+    margin: 40px 0 50px 0;
+}
+.mobile{
+    display: none;
+}
+/* Responsive CSS */
+@media all and (min-width: 1442px){
+    .main{
+        justify-content: space-evenly;
+    }
+}
+@media all and (max-width: 1452px){
+    section.profile-card{
+        position: relative;
+        right: 30px;
+    }
+}
+@media all and (max-width: 1351px){
+    header.header{
+        height: 450px;
+    }
+    section.profile-card{
+        position: relative;
+        right: 40px;
+    }
+}
+@media all and (max-width: 1286px){
+    header.header{
+        height: 400px;
+    }
+    .about-host{
+        display: block;
+    }
+    section.profile-card{
+        display: none;
+    }
+    .about-host .profile-card{
+        width: 1200px;
+    }
+    .about-host .profile-card .card{
+        width: 710px;
+        gap: 30px;
+    }
+    .about-host .profile-card .card .picXname{
+        display: flex;
+        gap: 120px;
+        width: 900px;
+        align-items: center;
+    }
+}
+@media all and (max-width: 1162px){
+    header.header{
+        height: 380px;
+    }
+}
+@media all and (max-width: 1067px){
+    header.header{
+        height: 350px;
+    }
+    footer{
+        align-items: center;
+        justify-content: center;
+    }
+    footer .time-grid{
+        display: none;
+    }
+}
+@media all and (max-width: 1016px){
+    header.header{
+        height: 280px;
+    }
+}
+@media all and (max-width: 839px){
+    header.header{
+        height: 210px;
+    }
+}
+/* Hide time-grid on screens above 815px */
+@media all and (min-width: 815px){
+       .time-grid{
+        display: none;
+    }
+}
+@media all and (max-width:815px){
+    header.header img{
+        display: block;
+    }
+    .content .ended{
+        display: inline;
+    }
+    .time-grid{
+        width: 600px;
+    }
+    .about-host .profile-card{
+        width: 900px;
+    }
+    .about-host .profile-card .card{
+        width: 550px;
+        gap: 30px;
+    } 
+    .about-host .profile-card .card .picXname{
+        width: 550px;
+        gap: 60px;
+    }
+    .content .desc{
+        font-size: 16px;
+        max-width: 500px;
+    }
+    .grid-events{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 100px;
+    }
+    .about-workshop p{
+        width: 600px;
+    }
+    .questions div{
+        max-width: 600px;
+    }
+    .post-question form input{
+        max-width: 500px;
+    }
+    .post-question-para,.post-question-heading{
+        max-width: 400px;
+    }
+}
+
+/* small screens */
+@media all and (max-width:665px){
+    .main{
+        padding-left: 55px;
+    }
+    .time-grid{
+        width: 420px;
+    }
+    .attribute{
+        font-size: 16px !important;
+    }
+    .value{
+        font-size: 16px !important;
+    }
+    /* card name and pic */
+    .picXname img:first-child{
+        width: 60px;
+        height: 60px;
+    }
+    .picXname .name h2{
+        font-size: 17px;
+    }
+    .picXname .name p{
+        font-size: 14px;
+    }
+    .follow{
+        width: 20px;
+        height: 20;
+    }
+    /* end */
+    .about-host .profile-card{
+        width: 600px;
+    }
+    .about-host .profile-card .card{
+        width: 450px;
+        gap: 30px;
+    } 
+    .about-host .profile-card .card .picXname{
+        width: 450px;
+        gap: 40px;
+    }
+    .content .desc{
+        font-size: 16px;
+        max-width: 500px;
+    }
+    .grid-events{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 100px;
+    }
+    .about-workshop p{
+        width: 480px;
+        /* font-size: 16px; */
+    }
+    .questions div{
+        max-width: 400px;
+    }
+    .questions div p{
+        font-size: 13px;
+        max-width: 300px;
+    }
+    .post-question form input{
+        max-width: 350px;
+    }
+    .post-question-para,.post-question-heading{
+        max-width: 400px;
+    }
+}
+/* smaller screens */
+@media all and (max-width: 599px){
+    :root{
+        --font-size-text: 15px;
+        --font-size-small-text: 16px;
+        --font-size-heading2: 17px;
+        --purple-color: #5040A1;
+        --text-margin: 33px;
+    }
+    .main{
+        padding-left: 30px;
+    }
+    .content .heading{
+        font-size: 20px !important;
+    }
+    .content .desc{
+        font-size: 14px !important;
+        max-width: 300px;
+    }
+    .profile-info img{
+        width: 35px;
+        height: 35px;
+    }
+    .profile-info h2{
+        font-size: 15px !important;
+    }
+    .profile-info span{
+        font-size: 13px !important;
+    }
+    .grid-list p{
+        font-size: 15px !important;
+    }
+    .about-workshop p{
+        max-width: 400px;
+    }
+    .picXname img:first-child{
+        width: 45px;
+        height: 45px;
+    }
+    .picXname .name h2{
+        font-size: 15px;
+    }
+    .picXname .name p{
+        font-size: 11px;
+    }
+    .follow{
+        width: 30px;
+        height: 30px;
+    }
+    .card .about{
+        font-size: 15px !important;
+        max-width: 380px;
+    }
+    .register button{
+        height: 50px;
+        width: 150px;
+        font-size: 18px !important;
+    }
+    .register .price p{
+        font-size: 20px !important;
+    }
+}
+/* smallest screens */
+@media all and (max-width: 457px){
+    header.header{
+        height: 120px;
+    }
+    .time-grid{
+        width: 360px;
+    }
+    .about-workshop p{
+        max-width: 310px;
+    }
+    .questions div{
+        max-width: 300px;
+    }
+    .questions div p{
+        font-size: 13px !important;
+    }
+    .post-question .post-question-heading{
+        max-width: 300px;
+    }
+    .post-question .post-question-para{
+        max-width: 300px;
+    }
+    .post-question form input{
+        max-width: 280px;
+    }
+}
